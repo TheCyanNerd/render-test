@@ -5,7 +5,10 @@ const cors = require('cors')
 const app = express()
 
 app.use(express.json())
+app.use(express.static('dist'))
+
 app.use(cors())
+
 
 morgan.token('body', (req, res) => { return req.body })
 const customLog = 
