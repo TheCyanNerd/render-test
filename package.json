@@ -1,20 +1,19 @@
 {
   "name": "backend",
   "version": "0.0.1",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf dist && cd ../notes-front && npm run build && cp -r dist ../render-test",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matti Luukkainen",
+  "author": "",
   "license": "MIT",
+  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
